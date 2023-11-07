@@ -141,12 +141,6 @@ function timerHandler() {
     }, 1000);
 }
 
-// function minusFifteen() {
-//     timeLeft -= 15;
-//     clearInterval(interval);
-//     timerHandler();
-// }
-
 function checkAnswers(event) {
     // Correct answers by question: c, a, d, c, b, a, d, b, c, a
     let value = event.target.id;
