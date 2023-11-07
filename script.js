@@ -135,7 +135,7 @@ function timerHandler() {
     interval = setInterval(function () {
         timer.textContent = timeLeft;
         timeLeft--;
-        if (timeLeft === 0) {
+        if (timeLeft <= 0) {
             endgameHandler();
         }
     }, 1000);
