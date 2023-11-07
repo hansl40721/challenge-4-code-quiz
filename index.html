@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <!-- Quiz Intro -->
+    <div class="opener" id="shown">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+            Welcome to the Coding Quiz Challenge! Your knowledge and skills behind the keyboard will be tested in
+            this timed event. Here are the rules:
+        </p>
+        <ul>
+            <li>The quiz will last for 90 seconds</li>
+            <li>Each incorrect answer will subtract 10 seconds from your remaining time.</li>
+            <li>Once all questions are answered or the timer runs out, the quiz will end.</li>
+            <li>You will be able to submit your high scores at the end of the quiz.</li>
+            <li>When you're ready to begin, press the start button below.</li>
+        </ul>
+        <h2>Good luck!</h2>
+        <button id="start">Begin</button>
+    </div>
+
+    <!-- Question and Score tracker-->
+    <div class="game" id="hidden">
+        <h1>Question <span id="question-number"></span>/ 10</h1>
+        <h2 class="score">Score: <span id="scoreTracker"></span></h2>
+        <h2 class="clock">Time Remaining: <span id="timer"></span></h2>
+
+
+        <!-- Questions-->
+        <div id="questions"></div>
+
+        <div id="correct-incorrect"></div>
+    </div>
+
+    <!-- Endgame-->
+    <div id="endgame">
+        <h1 id="endgameTitle">Your score was <span id="finalScore"></span>!</h1>
+        <p>Save your score?</p>
+        <p>Enter your initials below</p>
+        <form id="initialsForm">
+            <label for="playerInitials">Initials may be up to 3 characters</label><br>
+            <input type="text" minlength="1" maxlength="3" placeholder="i.e. ABC" id="playerInitials"
+                name="playerInitials"><br>
+            <input type="submit" id="highscoreSave" value="Submit">
+            <button id="restart">Restart</button>
+        </form>
+    </div>
+
+    <!-- Highschore Display-->
+    <div id="highscores">
+        <h2>Leaderboard</h2>
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>

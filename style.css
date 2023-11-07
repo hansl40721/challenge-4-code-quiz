@@ -1,0 +1,122 @@
+body {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+
+button {
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    background-color: white;
+    padding: 14px 40px;
+}
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1), 0 8px 20px 0 rgba(255, 255, 255, 1);
+}
+
+#highscoreSave {
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    background-color: white;
+    padding: 14px 40px;
+}
+
+#highscoreSave:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1), 0 8px 20px 0 rgba(255, 255, 255, 1);
+}
+
+.opener {
+    margin: auto;
+    margin-top: 5em;
+    width: 50%;
+    text-align: center;
+}
+
+.opener h1 {
+    margin: auto;
+    width: 50%;
+}
+
+.opener ul {
+    list-style-type: none;
+}
+
+.game {
+    margin: auto;
+    width: 50%;
+}
+
+.game h1 {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.game h2 {
+    display: inline-block;
+}
+
+#questions {
+    text-align: center;
+    margin: auto;
+    width: 50%
+}
+
+#correct-incorrect {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.clock {
+    float: right;
+}
+
+#hidden {
+    display: none;
+}
+
+#endgame {
+    display: none;
+}
+
+#timer {
+    display: none;
+}
+
+#endgame {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#initalsForm {
+    font-size: 12px;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type=text]:hover {
+    border: 3px solid white;
+}
+
+#highscores {
+    display: none;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+.scoreboardEl {
+    display: inline-block;
+    font-size: 24px;
+}
